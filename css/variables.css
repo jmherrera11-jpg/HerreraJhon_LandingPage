@@ -1,0 +1,54 @@
+/* ========================================
+   VARIABLES CSS - Climatización Eficiente
+   ======================================== */
+
+:root {
+    /* --- Paleta de colores principal --- */
+    --color-celeste-frio: #C9E6F2;
+    --color-azul-pastel: #B4CCE2;
+    --color-verde-menta: #CDE4D3;
+    --color-gris-azulado: #526672;
+    
+    /* --- Colores funcionales --- */
+    --color-primario: var(--color-celeste-frio);
+    --color-secundario: var(--color-azul-pastel);
+    --color-acento: var(--color-verde-menta);
+    --color-texto-principal: var(--color-gris-azulado);
+    
+    /* --- Colores de fondo y texto --- */
+    --color-fondo-claro: #f8fbf9;
+    --color-fondo-oscuro: #3a4d56;
+    --color-texto-claro: #ffffff;
+    --color-texto-oscuro: #2a3a42;
+    
+    /* --- Colores de estado --- */
+    --color-exito: #4CAF50;
+    --color-info: #2196F3;
+    --color-llamada: #2c7a8a;
+    --color-llamada-hover: #1e5a66;
+    
+    /* --- Tipografía --- */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-titulos: 'Arial', 'Helvetica', sans-serif;
+    --tamano-texto-base: 16px;
+    --tamano-titulo-principal: 2.2rem;
+    --tamano-titulo-secundario: 1.8rem;
+    --tamano-titulo-terciario: 1.3rem;
+    
+    /* --- Espaciados --- */
+    --espaciado-pequeno: 0.5rem;
+    --espaciado-medio: 1rem;
+    --espaciado-grande: 2rem;
+    --espaciado-muy-grande: 4rem;
+    
+    /* --- Bordes y sombras --- */
+    --radio-borde: 12px;
+    --sombra-suave: 0 4px 15px rgba(82, 102, 114, 0.15);
+    --sombra-media: 0 8px 25px rgba(82, 102, 114, 0.2);
+    --sombra-fuerte: 0 12px 40px rgba(82, 102, 114, 0.3);
+    
+    /* --- Transiciones --- */
+    --transicion-rapida: 0.3s ease;
+    --transicion-media: 0.5s ease;
+    --transicion-lenta: 0.8s ease;
+}

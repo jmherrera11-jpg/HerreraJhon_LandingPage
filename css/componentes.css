@@ -1,0 +1,364 @@
+/* ========================================
+   COMPONENTES ESPECÍFICOS - Climatización Eficiente
+   ======================================== */
+
+/* --- Importar variables y estilos generales --- */
+@import url('variables.css');
+@import url('general.css');
+
+/* ========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ======================================== */
+
+header {
+    background: white;
+    box-shadow: var(--sombra-suave);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: var(--espaciado-pequeno) 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--color-gris-azulado);
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--color-llamada);
+    margin-right: 8px;
+}
+
+.navbar-brand span {
+    color: var(--color-llamada);
+}
+
+.nav-link {
+    color: var(--color-texto-oscuro);
+    font-weight: 600;
+    transition: color var(--transicion-rapida);
+    padding: var(--espaciado-pequeno) var(--espaciado-medio);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-llamada);
+}
+
+.navbar-toggler {
+    border: 2px solid var(--color-celeste-frio);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(44, 122, 138, 0.2);
+}
+
+/* ========================================
+   SECCIÓN DE ESTADÍSTICAS
+   ======================================== */
+
+.estadisticas {
+    background: linear-gradient(135deg, var(--color-gris-azulado) 0%, #3a5a6a 100%);
+    color: var(--color-texto-claro);
+    padding: var(--espaciado-muy-grande) 0;
+}
+
+.estadistica-item {
+    text-align: center;
+    padding: var(--espaciado-medio);
+}
+
+.estadistica-item .numero {
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+    color: var(--color-verde-menta);
+    margin-bottom: var(--espaciado-pequeno);
+}
+
+.estadistica-item .etiqueta {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.estadistica-item i {
+    font-size: 2.5rem;
+    color: var(--color-celeste-frio);
+    margin-bottom: var(--espaciado-medio);
+    display: block;
+}
+
+/* ========================================
+   SECCIÓN DE LLAMADA A LA ACCIÓN
+   ======================================== */
+
+.llamada-accion {
+    background: linear-gradient(135deg, var(--color-celeste-frio) 0%, var(--color-azul-pastel) 100%);
+    padding: var(--espaciado-muy-grande) 0;
+    text-align: center;
+}
+
+.llamada-accion h2 {
+    color: var(--color-gris-azulado);
+    margin-bottom: var(--espaciado-medio);
+}
+
+.llamada-accion p {
+    color: var(--color-texto-oscuro);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto var(--espaciado-grande);
+}
+
+/* ========================================
+   CARRUSEL - Sección visual destacada
+   ======================================== */
+
+.carrusel-clima {
+    background: var(--color-fondo-claro);
+    padding: var(--espaciado-muy-grande) 0;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: var(--color-gris-azulado);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-gris-azulado);
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-llamada);
+}
+
+/* ========================================
+   SECCIÓN DE BENEFICIOS
+   ======================================== */
+
+.beneficios {
+    background: white;
+    padding: var(--espaciado-muy-grande) 0;
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--espaciado-medio);
+    padding: var(--espaciado-medio);
+}
+
+.beneficio-item i {
+    font-size: 2rem;
+    color: var(--color-llamada);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.beneficio-item h4 {
+    color: var(--color-gris-azulado);
+    margin-bottom: 4px;
+}
+
+.beneficio-item p {
+    color: var(--color-texto-oscuro);
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* ========================================
+   FORMULARIO DE CONTACTO
+   ======================================== */
+
+.contacto {
+    padding: var(--espaciado-muy-grande) 0;
+}
+
+.contacto-info {
+    background: white;
+    border-radius: var(--radio-borde);
+    padding: var(--espaciado-grande);
+    box-shadow: var(--sombra-suave);
+}
+
+.contacto-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado-medio);
+    padding: var(--espaciado-medio) 0;
+    border-bottom: 1px solid var(--color-celeste-frio);
+}
+
+.contacto-info .info-item:last-child {
+    border-bottom: none;
+}
+
+.contacto-info .info-item i {
+    font-size: 1.5rem;
+    color: var(--color-llamada);
+    width: 40px;
+    text-align: center;
+}
+
+/* ========================================
+   RESPONSIVE ADICIONALES
+   ======================================== */
+
+/* Móvil (375px) */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 60vh;
+        padding: var(--espaciado-grande) 0;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero .lead {
+        font-size: 1rem;
+    }
+    
+    .estadistica-item .numero {
+        font-size: 2.2rem;
+    }
+    
+    .carousel-item img {
+        height: 200px;
+    }
+    
+    .tarjeta-clima {
+        padding: var(--espaciado-medio);
+    }
+    
+    .contacto-form {
+        padding: var(--espaciado-medio);
+    }
+}
+
+/* Tablet (768px) - ajustes adicionales */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        min-height: 60vh;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Desktop (1366px) */
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero {
+        min-height: 85vh;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+/* ========================================
+   ACCESIBILIDAD
+   ======================================== */
+
+/* Estilo para enfoque en elementos interactivos */
+*:focus {
+    outline: 3px solid var(--color-llamada);
+    outline-offset: 2px;
+}
+
+/* Alto contraste para elementos importantes */
+.btn-primario {
+    background-color: var(--color-llamada);
+    color: var(--color-texto-claro);
+}
+
+/* Texto legible en todos los fondos */
+.texto-con-sombra {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   UTILIDADES ADICIONALES
+   ======================================== */
+
+.animate-hover {
+    transition: all var(--transicion-media);
+}
+
+.animate-hover:hover {
+    transform: translateY(-5px);
+}
+
+.rounded-custom {
+    border-radius: var(--radio-borde);
+}
+
+.shadow-custom {
+    box-shadow: var(--sombra-suave);
+}
+
+.shadow-custom:hover {
+    box-shadow: var(--sombra-media);
+}
+
+/* Animaciones suaves */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Ajustes para el contenedor de iconos */
+.icon-wrapper {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: var(--color-celeste-frio);
+    border-radius: 50%;
+    margin-bottom: var(--espaciado-medio);
+}
+
+.icon-wrapper i {
+    font-size: 2rem;
+    color: var(--color-llamada);
+}
